@@ -1,0 +1,13 @@
+group,action,avg_ms,worst_ms,note
+everyday,read history,6.52,29.67,
+everyday,generate tips,4.36,11.4,
+everyday,export my data,9.1,10.79,
+everyday,compare baselines,5.56,11.6,
+optimization,"day types, 10 restarts (before)",55.54,143.13,silhouette 0.212
+optimization,"day types, 3 restarts (after)",17.06,17.53,"silhouette 0.203, 3.3x faster"
+optimization,"300 marks lookups, 15000 rows, no index (before)",274.86,,
+optimization,"300 marks lookups, 15000 rows, with index (after)",119.59,,2.3x faster
+model,LSTM: first click (train + predict),3913.51,,train 3.4 s
+optimization,next-day prediction with model.predict (before),207.59,,
+optimization,next-day prediction with a direct call (after),54.95,,3.8x faster
+optimization,"LSTM: repeat click, saved result (after)",0.05,,was 3914 ms each time

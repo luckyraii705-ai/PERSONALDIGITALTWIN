@@ -1,0 +1,5 @@
+students,design,total_s,actions_per_s,errors,entries_saved,save_entry_p50_ms,save_entry_p95_ms,tips_p95_ms,day_types_p95_ms
+10,shared_nowal,2.36,142,35,100,31.2,74.2,91.7,561.8
+10,per_student,0.91,405,0,300,0.3,8.1,19.6,55.1
+50,shared_nowal,4.16,251,123,185,44.2,84.7,338.3,527.4
+50,per_student,4.22,439,0,1500,0.6,33.3,42.6,293.3
